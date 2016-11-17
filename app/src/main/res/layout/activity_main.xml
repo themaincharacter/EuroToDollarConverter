@@ -16,8 +16,19 @@
         android:inputType="numberDecimal"
         android:ems="10"
         android:layout_marginTop="18dp"
-        android:id="@+id/euroIn"
+        android:id="@+id/dollarInput"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:hint="Enter Euro" />
+        android:hint="Enter Euro"
+        android:singleLine="false" />
+
+    <Button
+        android:text="Convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dollarInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/convertButton"
+        android:onClick="onConvertClick (MainActivity)" />
 </RelativeLayout>
